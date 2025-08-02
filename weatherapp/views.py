@@ -50,6 +50,6 @@ def home(request):
           messages.error(request,'Entered data is not available to API')   
           day = datetime.date.today()
 
-          return render(request,'weatherapp/index.html' ,{'description':'clear sky', 'icon':'01d'  ,'temp':25 , 'day':day , 'city':'indore' , 'exception_occurred':exception_occurred } )
+          return render(request,'weatherapp/index.html' ,{'description':'clear sky', 'icon':'01d'  ,'temp':25 , 'day':day , 'city':'Addis Ababa' , 'exception_occurred':exception_occurred } )
                
     
