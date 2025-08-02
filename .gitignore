@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.log
+*.sqlite3
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.ENV/
+
+# Django specific
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+*.pot
+*.mo
+
+# Environment variables
+.env
+.env.*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Test & coverage
+htmlcov/
+.coverage
+.tox/
+.pytest_cache/
+
+# Migrations (optional: keep if under version control)
+**/migrations/__pycache__/
+**/migrations/*.pyc
+**/migrations/*.pyo
+**/migrations/*.pyd
+
+# Node/npm (if you use it for front-end)
+node_modules/
+package-lock.json
+yarn.lock
+
+# VSCode debug logs
+.vscode/settings.json
+.vscode/launch.json
