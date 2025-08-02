@@ -9,7 +9,7 @@ def home(request):
     if 'city' in request.POST:
          city = request.POST['city']
     else:
-         city = 'indore'     
+         city = 'Addis Ababa'     
     
     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid='
     PARAMS = {'units':'metric'}
@@ -26,10 +26,14 @@ def home(request):
     city_url = f"https://www.googleapis.com/customsearch/v1?key={API_KEY}&cx={SEARCH_ENGINE_ID}&q={query}&start={start}&searchType={searchType}&imgSize=xlarge"
 
     data = requests.get(city_url).json()
-    count = 1
     search_items = data.get("items")
-    image_url = search_items[1]['link']
-    
+    image_url = None
+
+    if search_items and len(search_items) > 1:
+        image_url = search_items[1].get('link')
+    else:
+        image_url = 'https://via.placeholder.com/1920x1080?text=No+Image+Found'
+        
 
     try:
           
