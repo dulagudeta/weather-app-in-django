@@ -115,25 +115,11 @@ To run this app, you need the following API keys:
 
 ---
 
-## ⚠️ Troubleshooting
-
-* Make sure your API keys are valid and not expired.
-* Google’s Custom Search API requires billing enabled, even for free-tier usage.
-* Google Image Search quota is limited (100 queries/day on free tier).
-
----
-
 ## 🙏 Acknowledgements
 
 * [OpenWeatherMap](https://openweathermap.org/)
 * [Google Custom Search JSON API](https://developers.google.com/custom-search/v1/overview)
 * Django community
-
----
-
-## 📃 License
-
-This project is open-source and available under the [MIT License](LICENSE).,
 
 ---
 Developed by [DULA](https://github.com/dulagudeta)
