@@ -78,7 +78,6 @@ To run this app, you need the following API keys:
    Open `weatherapp/views.py` and set:
 
    ```python
-   API_KEY = 'your_google_api_key'
    SEARCH_ENGINE_ID = 'your_google_search_engine_id'
    WEATHER_API_KEY = 'your_openweather_api_key'
    ```
@@ -102,7 +101,7 @@ To run this app, you need the following API keys:
 ## 🧪 Usage
 
 * Enter a city name in the search bar.
-* Click "Check Weather".
+* Click "Search".
 * View real-time temperature, weather condition, icon, and a city image.
 * If the city is invalid, a helpful error message will be displayed.
 
